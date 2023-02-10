@@ -175,3 +175,11 @@ label:hover + hr{
         width: 265px;
     }
 }
+
+@media screen and (max-width: 400px){
+    .contenedor-tarjetas{
+        position: relative;
+        top: 550px;
+        
+    }
+}
