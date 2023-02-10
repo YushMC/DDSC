@@ -1,0 +1,221 @@
+.formularios{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+.formularios input{
+    width: 100%;
+    
+}
+.formularios label{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.notificacion_error{
+    background-color: #ff9185;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.contenedor_encuesta{
+    position: relative;
+    max-width: 1000px;
+    top: 90px;
+    margin-top: 5%;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(240, 255, 255, 0.767);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-color: blueviolet;
+    border-top-style: solid;
+    border-top-width: 10px;
+    box-shadow: 0px 0px 80px 1px rgb(44, 44, 44);
+}
+.texto{
+    width: 100%;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+}
+.enviar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+.enviar button{
+    
+    background-color: #38adfc;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.enviar a{
+    background-color: #38adfc;
+    color: white;
+    border: none;
+    padding: 7px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.seleccion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.radio{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin: 10px;
+}
+.radio input[type="radio"]{
+    display: none;
+    border: none;
+}
+.radio label{
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    display: inline-block;
+    
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.radio label:hover{
+    color: #b10dc9;
+    transform: scale(1.2);
+    border-style: solid;
+    border-width: 5px;
+    border-color: #07b5e0;
+    box-shadow: 0px 0px 10px 1px rgb(53, 53, 53);
+    transition: all 0.2s linear;
+}
+.radio input[type="radio"]:checked + label{
+    
+    border-style: solid;
+    border-width: 5px;
+    
+    box-shadow: 0px 0px 10px 1px #b10dc9;
+    animation: seleccionado 2s infinite;
+}
+
+@keyframes seleccionado{
+    0%{
+        transform: scale(1);
+        border-color: #b10dc9;
+    }
+    50%{
+        transform: scale(1.04);
+        border-color: #ea7bfc;
+    }
+    100%{
+        transform: scale(1);
+        border-color: #b10dc9;
+    }
+}
+
+.formulario_responsive{
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--enfasis);
+    border-radius: 10px;
+    
+    
+}
+.usuario{
+    display: flex;
+    flex-direction: column;
+}
+.usuario label{
+    text-align: center;
+    color: var(--text-sobre);
+    text-transform:none;
+    font-size: 25px;
+    padding: 10px;
+}
+.usuario input{
+    text-align: center;
+    height: 30px;
+}
+.contra{
+    display: flex;
+    flex-direction: column;
+    
+}
+.contra label{
+    text-align: center;
+    color: var(--text-sobre);
+    text-transform:none;
+    font-size: 25px;
+    padding: 10px;
+    
+}
+.contra input{
+    height: 30px;
+    text-align: center;
+}
+@media screen and (max-width: 500px){
+    .usuario input{
+        width: 80%;
+    }
+    .usuario{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contra{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contra input{
+        width: 80%;
+    }
+}
+
+
+.formulario_responsive_2{
+    position: relative;
+    top:50px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    
+}
+.formulario_responsive_2 .usuario  label{
+    color: var(--text);
+}

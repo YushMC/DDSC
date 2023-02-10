@@ -1,0 +1,348 @@
+<!--
+-----------------------------IMPORTANTE---------------------------------------------------------
+
+    Este archivo será el editable para cada mod que se agregue,
+    Para ello, solo duplique el archivo template.html y siga las instrucciones marcadas en este documento,
+
+    NOTA: ES IMPORTANTE QUE LOS NOMBRES DE ARCHIVOS SEAN TODAS EN MINUSCULAS Y CON GUIONES MEDIOS "-"
+            SOLO SI OCUPA HACER ESPACIO.
+        
+        RECOMENDACIÓN: DENTRO DE ESTE ARCHIVO, LOS ARCHIVOS QUE HAGAN REFERENCIAS A OTROS ARCHIVOS HTML 
+                        NO SE COLOQUE LA TERMINACIÓN .html, YA EL MISMO SERVER DETECTA QUE ES UN ARCHIVO HTML,
+
+                    * ESTO DEBIDO A QUE SE TRATA DE HACER LOS LINKS O URLS, LO MAS SENCILLO DE RECORDAR *
+
+    EJEMPLO:
+        En lugar de ser... https://www.dokidokispanish.club/mod/Exit-Music.html
+        sea...  https://www.dokidokispanish.club/mod/exit-music
+
+        ESTO HACE QUE SEA MAS FÁCIL DE RECORDAR PARA LOS USUARIOS
+
+
+    ADEMAS:
+
+        Solo Modificar las partes que vengan con estos indicadores <!- ->,
+
+        Por favor solo modificar lo que sea señalado, ya que si modifican lo demas,
+        es probable que se rompa el archivo.
+
+    NOTA:
+    Si tiene dudas, por favor contactar con algun otro editor o owner.
+
+AL TERMINAR DE AGREGAR UN MOD, POR FAVOR ACCEDA Al ENLACE DE REGISTRO, PARA PODER REGISTRAR EL MOD QUE FUE AGREGADO
+
+--------------------------------------------------------------------------------------------------
+-->
+<!DOCTYPE html>
+<html data-colores="default" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../source/css/estilos.css">
+    <link rel="stylesheet" href="../source/css/cabecera.css">
+    <link rel="stylesheet" href="../source/css/botones.css">
+    <link rel="stylesheet" href="../source/css/tarjetas.css">
+    <link rel="stylesheet" href="../source/css/pop-up.css">
+    <link rel="stylesheet" href="../source/css/estilos-mods.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://kit.fontawesome.com/69bbe484d6.js" crossorigin="anonymous"></script>
+    <!-- Cambiar esta parte, y poner en <title> el Nombre del mod-->
+    <title>Inicio</title>
+</head>
+<body >
+    <header >
+        <div class="header_content">
+             
+            <div class="abajo"  >
+                <div class="logo" >
+                    <h1>Doki Doki Spanish Club</h1>
+                    
+                </div>
+                <div class="navegacion" data-aos="slide-left" data-aos-duration="1000">
+                    <nav>
+                        <ul>
+                            <li><a href="../index"><i class="fa-solid fa-house"></i>&nbsp;Inicio</a><hr></li>
+                            <li><a href="../traducciones/pagina-1"><i class="fa-solid fa-language"></i>&nbsp;Traducciones</a><hr></li>
+                            <li><a href="../mods-originales/pagina-1"><i class="fa-solid fa-people-group"></i>&nbsp;Mods</a><hr></li>
+                            
+                            <li><a href="#modal"><i class="fa-solid fa-brush"></i>&nbsp;Tema</a><hr></li>
+                            <!-- <li><a href="https://www.dokidokispanish.club/"><i class="fa-solid fa-house-user"></i> Ir al sitio web antiguo</a></li> -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+                
+           
+        </div>
+    </header>
+
+    <div class="container-alll-modal" id="modal">
+        <div class="popup">
+            <div class="img">
+
+            </div>
+            <div class="container-text">
+                <h3>Selecciona un color</h3>
+                <p>
+                    Solo da click en las imagenes!  
+
+                </p>
+                <div class="chibis">
+                    <div class="color">
+                        <button id="color-verde" onclick="colorSeleccionado('Monika')"><img src="../assets/chibis/m_sticker_1.png"></button>
+                    </div>
+                    <div class="color">
+                        <button id="color-rosa" onclick="colorSeleccionado('Natsuki')"><img src="../assets/chibis/n_sticker_1.png"></button>
+                    </div>
+                    <div class="color">
+                        <button id="color-azul" onclick="colorSeleccionado('Sayori')"><img src="../assets/chibis/s_sticker_1.png"></button>
+                    </div>
+                    <div class="color">
+                        <button id="color-morado" onclick="colorSeleccionado('Yuri')"><img src="../assets/chibis/y_sticker_1.png"></button>
+                    </div>
+                    
+                </div>
+                <div class="modo-oscuro">
+                    <p>
+                    Selecciona el color de fondo 
+                    <br>
+                    <label class="switch-modos">
+                        <input type="checkbox" id="swicth-mode" checked>
+                        <span class="slider1"></span>
+                    </label>
+                </p>
+                </div>
+            </div>
+            <a href="#" class="btn-close-popup">X</a>
+        </div>
+    </div>
+                                                    <!-- Cambiar solo esta parte, despues del assets-->
+                                                    <!-- ../assets/capturas/nombre_carpeta_mod/cap_1.png-->
+    <div class="parallax" style="background-image: url(../assets/capturas/Exit_Music/cap_1.png);" id="arriba">
+        
+        <div class="body_content">
+            <hr>
+            <div class="datos_mods_responsive" >
+                <div class="datos-mod">
+                    
+                    
+                    <div class="titulo">
+                        <!-- Colocar aquí el nombre del mod-->
+                        <h1> Doki Doki Exit Music</h1>
+                    </div>
+                    
+                    <div class="descripcion-mod">
+                        <img src="../assets/capturas/Exit_Music/logo.png" alt="" class="logo">
+                        <h3>Mod creado por: OliverCNorton</h3>
+                        <h3>Duración: Media</h3>
+                        <h3>Generos: Romance / Drama</h3>
+                        <h3>Descripción: </h3>
+                            <p>
+                            <br>
+                            <!-- Colocar aquí la descripción-->
+                            Doki Doki Exit Music Mod es un juego/Mod basado en el popular juego de Doki Doki Literature Club!, creado por Dan Salvato.<br>
+                            ¿Que hubiera sucedido si Sayori no se hubiera suicidado? ¿Que hubiera sucedido si Monika no hubiera intervenido a tiempo?<br>
+                            ¿Que hubiera sucedido, si el Acto 1 no hubiera acabado en el momento indicado?<br>
+                            Aquí, todas esas preguntas serán resueltas. El Acto 1 seguirá de una manera totalmente diferente, con diversos giros en la trama y momentos que te dejarán sin aliento, tirando lágrimas, o totalmente satisfecho.<br>
+                            Y lo más importante; ¿habrá finalmente un “final feliz”?
+                            <br><br>
+                        </p>
+                        
+                        <p><b>Traductor: </b><!-- dejar solo si es traducción, quitar si es mod original-->
+                             Fabrizio Rui / Yitzhaak</p>
+                        
+                        </div>
+                        <hr style="width: 100%; height:5px; border-radius:5px">
+                        
+                            <h2 style="text-align: center; padding: 10px; margin-bottom: 10px;"><i class="fa-solid fa-download"></i> Zona de descargas</h2>
+                        
+                        <div class="botones">
+
+                        <!-- en "href=" colocar dentro de los "" el link para descargar -->
+                <!--PC--><a href="https://drive.google.com/file/d/1F8IAgsCRLJb8t8xmP_ihWCpR9OfbGAuy/view" target="_blank" class="correcto"><i class="fa-brands fa-windows"></i> Descargar</button></a>
+                <!--Android--> <a href="https://www.mediafire.com/file/dn688f5m6ducn37/Doki+doki+exit+music.apk/file" target="_blank" class="correcto"><i class="fa-brands fa-android"></i> Descargar</button></a>
+                            
+                        </div>
+                        
+                    
+                        <hr style="width: 100%; height:5px; border-radius:5px">
+                        
+                        <h2 style="text-align: center; padding: 10px; margin-bottom: 10px;"><i class="fa-solid fa-image"></i> Algunas capturas</h2>
+                    
+                        
+                    
+                </div>
+                <div class="imagenes">
+                    
+                    
+                                
+                    <div class="row">
+                        <div class="column">
+                            <!-- Cambiar solo esta parte, despues del "..assets/capturas/nombre_del_mod/cap_1.png o .jpg" -->
+                            <img src="../assets/capturas/Exit_Music/cap_1.png" alt="" 
+                            data-aos="zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="300"
+                            data-aos-duration="1000"
+                            data-aos-offset="0">
+                            <!-- Cambiar solo esta parte, despues del "..assets/capturas/nombre_del_mod/cap_2.png o .jpg" -->
+                            <img src="../assets/gui/Imagen-no-disponible.jpg" alt="" 
+                            data-aos="zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="300"
+                            data-aos-duration="1100"
+                            data-aos-offset="0">
+
+                        </div>
+                        
+
+                    </div>
+                    <div class="botones">
+                        <button onclick="window.history.back();" class="registrarse" >Regresar a página anterior</button>
+                </div>
+                    </div>
+                    
+                
+                
+            </div>
+    
+            <div class="datos_mods_responsive" >
+                <div class="datos-mod">
+                    
+                    
+                    <div class="titulo">
+                        <h1>Zona de comentarios</h1>
+                    </div>
+                    
+                    <div class="descripcion-mod">
+                        <!-- en los "data-href" colocar el nombre del archivo del mod, despues de "mod/""-->
+                        <div class="fb-comments" data-href="https://www.dokidokispanish.club/mod/exit-music" data-width="500px" data-numposts="20"></div>
+                        <div class="fb-like" data-href="https://www.dokidokispanish.club/mod/exit-music" data-width="40px" data-layout="button_count" data-action="like" data-size="large" data-share="false"></div>
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                
+                
+            </div>
+           
+            <!-- Traducciones 
+    
+            <div class="contenedor-tarjetas" data-aos="fade" data-aos-duration="1000">
+                <div class="nombre_seccion">
+                    <h2><i class="fa-solid fa-language"></i> Traducciones </h2>
+                    
+                </div>
+                <div class="container_cards">
+                    <div class="card"  data-aos="fade-down-right" data-aos-duration="2000">
+                        <div class="cover">
+                            <img src="assets/logos/logo_em.png" alt="">
+                            <div class="img__back"></div>
+                        </div>
+                        <div class="description">
+                            <h2>Exit Music</h2>
+                            <div class="info-mods">
+                                <div class="duracion-card">
+                                    <label>Duracion: Largo</label>
+                                    <hr>
+                                </div>
+                                <div class="genero-card">
+                                    <label>Genero: </label>
+                                    <hr>
+                                </div>
+                                <div class="estado-card">
+                                    <label>Estado: </label>
+                                    <hr>
+                                </div>
+                                <!--
+                                <div class="fecha-card">
+                                    <label>Subido: </label>
+                                    <hr>
+                                </div>
+                                
+                                <div class="plataforma-card">
+                                    <label>Plataforma: </label>
+                                    <hr>
+                                </div>
+                            </div>
+                            <input type="button" value="Leer Más">
+                        </div>
+                    </div>
+            
+                    <div class="card" data-aos="fade-down" data-aos-duration="2000">
+                        <div class="cover">
+                            <img src="assets/logos/logo_olm.png" alt="">
+                            <div class="img__back"></div>
+                        </div>
+                        <div class="description">
+                            <h2>One Last Memory</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                            <input type="button" value="Leer Más">
+                        </div>
+                    </div>
+            
+                    <div class="card" data-aos="fade-down-left" data-aos-duration="2000">
+                        <div class="cover">
+                            <img src="assets/logos/logo_MAS.png" alt="">
+                            <div class="img__back"></div>
+                        </div>
+                        <div class="description">
+                            <h2>Monika After Story</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                            <input type="button" value="Leer Más">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            -->
+
+    </div>
+    
+    
+    <footer>
+        <div class="footer_content">
+
+        </div>
+    </footer>
+</body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v16.0" nonce="N4dwyW5j"></script>
+<script src="../source/JS/sliders.js"></script>
+    <script src="../source/JS/sweetalert.min.js"></script>
+    <script>
+        function notificacionPrueba(){
+            swal({
+                title: "Modo de prueba",
+                text: "Esta función se encuentra en modo de prueba",
+                icon: "info",
+                button: "¡De acuerdo!",
+            });
+        }
+        function colorSeleccionado(coloress){
+            swal({
+                title: "Cambio efectuado",
+                text: "Se cambio al modo de color de: "+coloress,
+                icon: "success",
+                button: "¡De acuerdo!",
+            });
+
+
+        }
+    </script>
+    <script src="../source/JS/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="../source/JS/modo-oscuro.js"></script>
+    <script src="../source/JS/efecto-portada.js"></script>
+    <script src="../source/JS/simpleParallax.js">
+        const portadas = document.getElementsByClassName('portada');
+            new simpleParallax(portadas, {scale:5});
+    </script>
+</html>

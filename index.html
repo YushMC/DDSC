@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html data-colores="default" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="source/css/estilos.css">
+    <link rel="stylesheet" href="source/css/cabecera.css">
+    <link rel="stylesheet" href="source/css/botones.css">
+    <link rel="stylesheet" href="source/css/tarjetas.css">
+    <link rel="stylesheet" href="source/css/pop-up.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <script src="https://kit.fontawesome.com/69bbe484d6.js" crossorigin="anonymous"></script>
+    <title>Inicio</title>
+</head>
+<body >
+    <header >
+        <div class="header_content">
+             
+            <div class="abajo"  >
+                <div class="logo" >
+                    <h1>Doki Doki Spanish Club</h1>
+                    
+                </div>
+                <div class="navegacion" data-aos="slide-left" data-aos-duration="1000">
+                    <nav>
+                        <ul>
+                            <li id="selected"><a href="index"><i class="fa-solid fa-house"></i> Inicio</a><hr></li>
+                            <li><a href="traducciones/pagina-1"><i class="fa-solid fa-language"></i> Traducciones</a><hr></li>
+                            <li><a href="mods-originales/pagina-1"><i class="fa-solid fa-people-group"></i> Mods</a><hr></li>
+                            <li><a href="#modal"><i class="fa-solid fa-brush"></i> Tema</a><hr></li>
+                            <!-- <li><a href="https://www.dokidokispanish.club/"><i class="fa-solid fa-house-user"></i> Ir al sitio web antiguo</a></li> -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+                
+           
+        </div>
+    </header>
+
+    <div class="container-alll-modal" id="modal">
+        <div class="popup">
+            <div class="img">
+
+            </div>
+            <div class="container-text">
+                <h3>Selecciona un color</h3>
+                <p>
+                    Solo da click en las imagenes!  
+
+                </p>
+                <div class="chibis">
+                    <div class="color">
+                        <button id="color-verde" onclick="colorSeleccionado('Monika')"><img src="assets/chibis/m_sticker_1.png"></button>
+                    </div>
+                    <div class="color">
+                        <button id="color-rosa" onclick="colorSeleccionado('Natsuki')"><img src="assets/chibis/n_sticker_1.png"></button>
+                    </div>
+                    <div class="color">
+                        <button id="color-azul" onclick="colorSeleccionado('Sayori')"><img src="assets/chibis/s_sticker_1.png"></button>
+                    </div>
+                    <div class="color">
+                        <button id="color-morado" onclick="colorSeleccionado('Yuri')"><img src="assets/chibis/y_sticker_1.png"></button>
+                    </div>
+                    
+                </div>
+                <div class="modo-oscuro">
+                    <p>
+                    Selecciona el color de fondo 
+                    <br>
+                    <label class="switch-modos">
+                        <input type="checkbox" id="swicth-mode" checked>
+                        <span class="slider1"></span>
+                    </label>
+                </p>
+                </div>
+            </div>
+            <a href="#" class="btn-close-popup">X</a>
+        </div>
+    </div>
+    <div class="parallax" style="background-image: url(assets/gui/banner_inicio.jpg);">
+        
+        <div class="body_content">
+            <hr>
+            <div class="contenido" >
+                <div class="imagenes">
+                    <img src="assets/gui/banner_inicio.jpg" >
+                </div>
+                <div class="texto">
+                    <h1>Doki Doki Spanish Club!</h1>
+                    <p>
+                        ¡Aquí encontrarás la gran mayoría de traducciones, mods, comunidades, noticias y nuevos proyectos de Doki Doki Literature Club! de nuestra comunidad!... 
+                        <br><br>
+                        ¡Actualizamos constantemente!
+                        
+                    </p>
+                    
+                    <a href="https://www.dokidokispanish.club" class="saber_mas"> Sitio Web Antiguo</a>
+                    
+                </div>
+                
+            </div>
+    
+            <!-- Traducciones -->
+    
+            <div class="contenedor-tarjetas" data-aos="fade" data-aos-duration="1000">
+                <div class="nombre_seccion">
+                    <h2><i class="fa-solid fa-language"></i> Traducciones Recientes</h2>
+                    
+                </div>
+                <div class="container_cards">
+                    <div class="card"  data-aos="fade-down-right" data-aos-duration="2000">
+                        <div class="cover">
+                            <img src="assets/logos/logo_em.png" alt="">
+                            <div class="img__back"></div>
+                        </div>
+                        <div class="description">
+                            <h2>Exit Music</h2>
+                            <div class="info-mods">
+                                <div class="duracion-card">
+                                    <label>Duracion: Largo</label>
+                                    <hr>
+                                </div>
+                                <div class="genero-card">
+                                    <label>Genero: </label>
+                                    <hr>
+                                </div>
+                                <div class="estado-card">
+                                    <label>Estado: </label>
+                                    <hr>
+                                </div>
+                                <!--
+                                <div class="fecha-card">
+                                    <label>Subido: </label>
+                                    <hr>
+                                </div>
+                                -->
+                                <div class="plataforma-card">
+                                    <label>Plataforma: </label>
+                                    <hr>
+                                </div>
+                            </div>
+                            <input type="button" value="Leer Más">
+                        </div>
+                    </div>
+            
+                    <div class="card" data-aos="fade-down" data-aos-duration="2000">
+                        <div class="cover">
+                            <img src="assets/logos/logo_olm.png" alt="">
+                            <div class="img__back"></div>
+                        </div>
+                        <div class="description">
+                            <h2>One Last Memory</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                            <input type="button" value="Leer Más">
+                        </div>
+                    </div>
+            
+                    <div class="card" data-aos="fade-down-left" data-aos-duration="2000">
+                        <div class="cover">
+                            <img src="assets/logos/logo_MAS.png" alt="">
+                            <div class="img__back"></div>
+                        </div>
+                        <div class="description">
+                            <h2>Monika After Story</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                            <input type="button" value="Leer Más">
+                        </div>
+                    </div>
+                </div>
+                
+                
+    
+                    
+                </div>
+    
+                <!-- Mods Originales -->
+                <div class="contenedor-tarjetas" >
+                    <div class="nombre_seccion">
+                        <h2>Mods Recientes</h2>
+                    </div>
+                    <div class="container_cards">
+                        <div class="card" data-aos="fade-down-right" data-aos-duration="2000">
+                            <div class="cover">
+                                <img src="assets/logos/logo_mx.png" alt="">
+                                <div class="img__back"></div>
+                            </div>
+                            <div class="description">
+                                <h2>Mexican Club</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                                <input type="button" value="Leer Más">
+                            </div>
+                        </div>
+                
+                        <div class="card" data-aos="fade-down" data-aos-duration="2000">
+                            <div class="cover">
+                                <img src="assets/logos/logo_ap.png" alt="">
+                                <div class="img__back"></div>
+                            </div>
+                            <div class="description">
+                                <h2>Awekening Problem</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                                <input type="button" value="Leer Más">
+                            </div>
+                        </div>
+                
+                        <div class="card" data-aos="fade-down-left" data-aos-duration="2000">
+                            <div class="cover">
+                                <img src="assets/logos/logo_swc.png" alt="">
+                                <div class="img__back"></div>
+                            </div>
+                            <div class="description">
+                                <h2>Switching Club</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                                <input type="button" value="Leer Más">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+        
+                        
+                    </div>
+            </div>
+
+    </div>
+    
+    
+    <footer>
+        <div class="footer_content">
+
+        </div>
+    </footer>
+</body>
+
+<script src="source/JS/sliders.js"></script>
+    <script src="source/JS/sweetalert.min.js"></script>
+    <script>
+        function notificacionPrueba(){
+            swal({
+                title: "Modo de prueba",
+                text: "Esta función se encuentra en modo de prueba",
+                icon: "info",
+                button: "¡De acuerdo!",
+            });
+        }
+        function colorSeleccionado(coloress){
+            swal({
+                title: "Cambio efectuado",
+                text: "Se cambio al modo de color de: "+coloress,
+                icon: "success",
+                button: "¡De acuerdo!",
+            });
+
+
+        }
+    </script>
+    <script src="source/JS/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="source/JS/modo-oscuro.js"></script>
+    <script src="source/JS/efecto-portada.js"></script>
+    <script src="source/JS/simpleParallax.js">
+        const portadas = document.getElementsByClassName('portada');
+            new simpleParallax(portadas, {scale:5});
+    </script>
+</html>

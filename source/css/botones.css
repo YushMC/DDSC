@@ -1,0 +1,80 @@
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+.registrarse{
+    padding: 8px;
+    background: #3f3f3f;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: all 0.5s linear;
+    border-style: none;
+    cursor: pointer;
+}
+.registrarse:hover{
+    background: #7e7e7e;
+    transform: scale(1.05);
+    transition: all 0.5s linear;
+    border-style: none;
+}
+.salir{
+  padding: 8px;
+  background: #990101;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: all 0.5s linear;
+  border-style: none;
+  cursor: pointer;
+}
+.salir:hover{
+  background: #d81717;
+  transform: scale(1.05);
+  transition: all 0.5s linear;
+  border-style: none;
+}
+
+.saber_mas{
+        background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+        
+        padding: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: block;
+    }
+
+      .saber_mas:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+        transform: scale(1.1);
+      }
+
+.correcto{
+        background-image: linear-gradient(to right, #3592fc 0%, #3374ee  51%, #2231ff  100%);
+        padding: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: block;
+    }
+
+      .correcto:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+        transform: scale(1.1);
+      }

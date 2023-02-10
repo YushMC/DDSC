@@ -1,0 +1,177 @@
+.contenedor-tarjetas{
+    position: relative;
+    max-width: 1000px;;
+    margin-left: 14%;
+    margin-right: 14%;
+    top: 300px;
+    margin-bottom: 2%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-color: var(--enfasis);
+    border-top-style: solid;
+    border-top-width: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 80px 1px rgb(44, 44, 44);
+}
+
+.container_cards{
+    
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.nombre_seccion{
+    text-align: center;
+    padding-top: 5px;
+    color: var(--text);
+}
+
+.card{
+    width: 250px;
+    margin: 10px;
+    transition: all 300ms;
+}
+
+.card:hover{
+    width: 350px;
+}
+
+.card .cover{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .cover img{
+    width: 200px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: all 400ms;
+}
+
+.card:hover .cover img{
+    top: 0px;
+    filter: none;
+}
+
+.card .img__back{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.img__back{
+    background-image: var(--background_cards);
+}
+
+
+
+.card:hover .img__back{
+    bottom: -40px;
+}
+
+.card .description{
+    background: var(--primary);
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+    text-align: center;
+    color: var(--text);
+}
+
+.card:hover .description{
+    padding: 40px;
+}
+
+.card .description h2{
+    margin-top: 10px;
+}
+
+.card .description p{
+    margin-top: 10px;
+}
+
+.card .description input{
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    background: var(--enfasis);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+
+.card .description input:hover{
+    background: var(--enfasis);;
+}
+.info-mods{
+    text-align: left;
+    padding: 5px;
+}
+hr{
+    color: var(--enfasis);
+    width: 30%;
+    transition: all 0.5s linear;
+    height: 3px;
+    background-color: var(--enfasis);
+    border-style: none;
+}
+
+label:hover{
+    color: var(--text);
+    
+}
+label:hover + hr{
+    width: 100%;
+}
+@media screen and (max-width: 1200px){
+    .contenedor-tarjetas{
+        position: relative;
+        top: 600px;
+        
+    }
+    .tarjetas{
+        display: flex;
+        flex-direction: column;
+    }
+    .tarjeta{
+        width: 98%;
+        margin-top: 10px;
+    }
+    .tarjeta .imagenes img{
+        width: 265px;
+    }
+}
+@media screen and (max-width: 840px){
+    .contenedor-tarjetas{
+        position: relative;
+        top: 700px;
+        
+    }
+    .tarjetas{
+        display: flex;
+        flex-direction: column;
+    }
+    .tarjeta{
+        width: 98%;
+        margin-top: 10px;
+    }
+    .tarjeta .imagenes img{
+        width: 265px;
+    }
+}

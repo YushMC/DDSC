@@ -1,0 +1,172 @@
+header{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 100;
+    transition: all 0.7s linear;
+    background: rgba(58, 58, 58, 0.3);
+    backdrop-filter: blur(0.07rem);
+    
+}
+.abajo_scroll{
+    background: rgb(58, 58, 58);
+    transition: all 0.7s linear;
+}
+.header_content{
+    position: relative;
+    color: azure;
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    position: sticky;
+}
+.arriba{
+    position: relative;
+    
+    
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    visibility: hidden;
+    opacity: 0;
+}
+.abajo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.navegacion nav ul{
+    position: relative;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+.navegacion nav ul li{
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.navegacion nav ul li a{
+    color: azure;
+    padding: 5px;
+    transition: all .4s linear;
+}
+.navegacion nav ul li a:hover{
+    color: rgb(189, 189, 189);
+    
+    transition: all .4s linear;
+}
+.navegacion nav ul li hr{
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.navegacion nav ul li:hover  hr{
+    background-color: var(--enfasis);
+    width: 100%;
+}
+#selected{
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    *animation: focus-boton 4s infinite;
+}
+
+#selected:hover a{
+    color: rgb(189, 189, 189);
+    
+    transition: all .4s linear;
+}
+#selected  hr{
+    visibility: visible;
+    background-color: var(--enfasis);
+    width: 100%;
+}
+@keyframes focus-boton{
+    0%{
+        transform: scale(1);
+    }50%{
+        transform: scale(1.05);
+        background: var(--enfasis);
+        font-size: 18px;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@media screen and (max-width: 840px){
+    header{
+        width: 100%;
+        height: 150px;
+        position: fixed;
+        
+    }
+    .abajo{
+        display: flex;
+        
+        flex-direction: column;
+        
+    }
+    .abajo .logo h1{
+        text-align: left;
+        font-size: 20px;
+    }
+    .navegacion nav ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .navegacion nav ul li{
+        background: #aaaaaa62;
+    }
+    .navegacion nav ul li a{
+        font-size: 12px;
+    }
+    #selected{
+        background: var(--enfasis);
+    }
+}
+@media screen and (max-width: 760px){
+    header{
+        background: rgba(58, 58, 58, 0.5);
+        height: 150px;
+    }
+    .abajo{
+        display: flex;
+        
+        flex-direction: column;
+    }
+    .abajo .logo h1{
+        text-align: left;
+        font-size: 20px;
+    }
+    .navegacion nav ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .navegacion nav ul li a{
+        font-size: 12px;
+    }
+    #selected hr{
+        visibility: hidden;
+        opacity: 0;
+    }
+}

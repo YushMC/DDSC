@@ -1,0 +1,273 @@
+[data-theme="light"] {
+    --primary: #ececec;
+    --background: url("../../assets/gui/Dania.png");
+    --text: #000;
+    --text-sobre: #fff;
+    --background_cards:url("../../assets/gui/menu_bg.png");
+    --enfasis:#e726ee;
+}
+
+[data-theme="dark"] {
+    --primary: #252525;
+    --background:url("../../assets/gui/Royal.png");
+    --text: #fff;
+    --text-sobre: #000;
+    --background_cards:url("../../assets/gui/menu_bg_d.png");
+    --enfasis:#a610ac;
+}
+
+[data-colores="verde"] {
+    --enfasis:#009d71;
+    
+}
+[data-colores="rosa"] {
+    --enfasis:#a610ac;
+    
+}
+[data-colores="azul"] {
+    --enfasis:#046797;
+    
+}
+[data-colores="morado"] {
+    --enfasis:#974be2;
+    
+}
+
+
+
+/* Pop ups */
+
+.container-alll-modal{
+    width: 100%;
+    height: 150%;
+    position: fixed;
+    margin-top: -200px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+    z-index: 960;
+    padding: 40px;
+}
+.container-alll-modal:target{
+    background: rgba(0, 0, 0,0.6);
+    visibility: visible;
+    opacity: 1;
+    
+}
+.container-alll-modal:target .popup{
+    top: 60%;
+    left:50%;
+    transform: rotate(0deg ) translate(-50% , -50%);
+    visibility: visible;
+}
+.popup{
+    max-width: 800px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    top:-80%;
+    left:-80%;
+    transform: rotate(90deg) translate(-150%,-230%);
+    transition: all 0.6s;
+    background: var(--background);
+    visibility: hidden;
+    z-index: 100;
+    color: var(--text-sobre);
+    border-radius: 10px;
+}
+
+.popup .img{
+    width: 40%;
+    background-image: url("../../assets/gui/editores-y-aportadores.png");
+    background-size: cover;
+    background-position:  80%;
+    border-radius: 10px;
+}
+
+.popup .container-text{
+    width: 60%;
+    padding: 50px;
+    overflow-y: auto;
+    color: var(--text);
+}
+
+.popup .container-text h3{
+    font-size: 30px;
+    font-weight: 400;
+    
+}
+.popup .container-text p{
+    margin-top: 20px;
+    font-size: 16px;
+}
+.popup .btn-close-popup{
+
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: var(--enfasis);
+    border-radius: 5px;
+    padding: 1%;
+    color: #fff;
+}
+.chibis{
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 10px;
+}
+.chibis button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.chibis button img{
+    width: 45%;
+}
+
+/* Estilos del switch */
+.popup .modo-oscuro{
+    width: 100%;
+    margin-top: 10px;
+    
+}
+.popup .modo-oscuro p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -15%;
+}
+
+.popup .modo-oscuro .switch-mode{
+    background: #343D58;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+.popup .modo-oscuro .switch-mode span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+}
+.popup .modo-oscuro .switch-mode::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top:0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0,0.2);
+}
+.active{
+    background: orange;
+    color: black;
+}
+.active::after{
+    right: 0;
+    left: unset;
+}
+.switch-modos {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background: #838283;
+    border-radius: 10px;
+}
+
+.switch-modos input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+    
+}
+  
+.slider1 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+  
+.slider1:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--primary);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+  
+input:checked + .slider1 {
+    background-color: var(--background);
+}
+  
+input:checked + .slider1:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+@media screen  and (max-width: 900px){
+    .container-alll-modal{
+       
+        height: 100%;
+        position: fixed;
+        top: 200px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.6s;
+        z-index: 200;
+        padding: 40px;
+    }
+    .popup{
+        
+        flex-direction: column;
+        height: 69%;
+        
+        margin-top: -20px;
+        margin-left: -10px;
+        
+    }
+    
+    .popup .img{
+        background-image: url("../../assets/gui/doki-doki-literature-club-yume-nikki-inspirations-monika-ssbu.jpg");
+        width: 100%;
+        height: 40%;
+        
+    }
+
+    .popup .container-text{
+        width: 100%;
+        height: 60%;
+        margin: 10px;
+        text-align: center;
+
+    }
+}
