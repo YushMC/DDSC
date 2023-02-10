@@ -46,7 +46,7 @@ body{
 .body_content{
     width: 100%;
     position: relative;
-    top:70%;
+    top:60%;
     background-image: var(--background);
     background-repeat:repeat-y;
     background-size: cover;
@@ -217,7 +217,7 @@ body{
     }
     .body_content{
         padding-bottom: 1000px;
-        top: 18.5%;
+        top: 17.5%;
 
     }
     

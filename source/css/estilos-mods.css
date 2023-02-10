@@ -101,9 +101,16 @@
     .descripcion-mod{
         font-size: 15px;
         text-align: justify;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
     }
     .descripcion-mod h3{
+        padding: 5px;
         text-align: left;
+        font-size: 12px;
+
     }
     
     .titulo button{
@@ -113,6 +120,6 @@
     }
     .titulo h1{
         width: 100%;
-        margin-left: -150px;
+        
     }
 }
