@@ -193,6 +193,7 @@ body{
 }
 
 @media screen and (max-width: 840px){
+    
     .contenido{
         display: flex;
         flex-direction: column;
@@ -217,7 +218,7 @@ body{
     }
     .body_content{
         padding-bottom: 1000px;
-        top: 20%;
+        top: 15%;
 
     }
     
