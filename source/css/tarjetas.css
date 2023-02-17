@@ -131,6 +131,7 @@
     background: var(--enfasis);;
 }
 .info-mods{
+    margin-top: 10px;
     text-align: left;
     padding: 5px;
 }

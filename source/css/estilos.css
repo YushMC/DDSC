@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 *{
     margin: 0;
     text-decoration: none;
@@ -119,8 +120,71 @@ body{
     padding-bottom: 50px;
     font-size: 15px;
 }
+.seleccion-editor {
+    position: relative;
+    top:10px;
+    font-size: 20px;
+    font-weight: 50px;
+    color: transparent;
+    background-image: linear-gradient(to left, #e45412, #8776e7, #4da4dd, #4fe78f, #e442f3);    
+    background-clip: text;
+    animation: color-rainbow 9s linear infinite;
+    background-size: 500%;    
+    filter:drop-shadow(5px 5px 4px rgba(255,255,255,0.2));
+}
+.seleccion-editor:hover{
+    color: rgba(0, 0, 0, 0.05);
+        
+}
+@keyframes color-rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
 
+    50% {
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
 
+.glitch {
+    
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'Rubik Glitch', cursive;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    animation: glitch 500ms infinite;
+  }
+
+  @keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    
+    15% {
+      text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+        0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    
+    50% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+        0.05em 0 0 rgba(0, 255, 0, 0.75), 
+        0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    
+    100% {
+      text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+  }
 
 
 @keyframes fondo-movimiento{
