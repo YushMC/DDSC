@@ -34,7 +34,7 @@
 }
 
 .card:hover{
-    width: 205px;
+    width: 204px;
     
 }
 
@@ -92,7 +92,6 @@
     bottom: -80px;
     filter: contrast(1);
 }
-
 
 
 .card .description{
@@ -156,7 +155,6 @@ label:hover + hr{
 @media screen and (max-width: 1200px){
     .contenedor-tarjetas{
         position: relative;
-        top: 600px;
         
     }
     .tarjetas{
@@ -174,7 +172,6 @@ label:hover + hr{
 @media screen and (max-width: 840px){
     .contenedor-tarjetas{
         position: relative;
-        top: 700px;
         
     }
     .tarjetas{
@@ -193,7 +190,7 @@ label:hover + hr{
 @media screen and (max-width: 400px){
     .contenedor-tarjetas{
         position: relative;
-        top: 550px;
+
         
     }
     

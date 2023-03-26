@@ -53,7 +53,6 @@ body{
     background-repeat:repeat-y;
     background-size: cover;
     z-index: 2;
-    padding-bottom: 500px;
     overflow: hidden;
     margin: auto;
 }
@@ -231,7 +230,6 @@ body{
         padding: 5px;
     }
     .body_content{
-        padding-bottom: 800px;
         top: 50%;
     }
     .parallax{
@@ -288,11 +286,9 @@ body{
         padding: 5px;
     }
     .body_content{
-        padding-bottom: 1000px;
         top: 15%;
 
     }
     
     
 }
-
