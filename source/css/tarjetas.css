@@ -105,9 +105,6 @@
     color: var(--text);
 }
 
-.card:hover .description{
-    padding: 40px;
-}
 
 .card .description h2{
     margin-top: 10px;
