@@ -12,7 +12,7 @@ btnSwitch.addEventListener('click', ()  => {
     setTheme(switchToTheme);
 });
 
-setTheme(localStorage.getItem('theme') || preferedColorScheme);
+// setTheme(localStorage.getItem('theme') || preferedColorScheme);
 
 const btnMonika = document.querySelector('#color-verde');
 const btnNatsuki = document.querySelector('#color-rosa');
