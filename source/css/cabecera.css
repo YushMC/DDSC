@@ -99,7 +99,7 @@ header{
 }
 #selected  hr{
     visibility: visible;
-    background-color: var(--enfasis);
+    background-color: white;
     width: 100%;
 }
 @keyframes focus-boton{
