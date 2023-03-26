@@ -5,6 +5,7 @@
     --text-sobre: #fff;
     --background_cards:url("../../assets/gui/menu_bg.png");
     --enfasis:#e726ee;
+    --enfasis_transparente:#e726ee86;
     --color_header : #393d42;
     
 }
@@ -16,6 +17,7 @@
     --text-sobre: #000;
     --background_cards:url("../../assets/gui/menu_bg_d.png");
     --enfasis:#a610ac;
+    --enfasis_transparente: #a710ac86;
     --color_header : #393d42;
 }
 
