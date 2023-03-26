@@ -89,7 +89,7 @@
 
 .card:hover .img__back{
     transition: all 500ms linear;
-    bottom: -60px;
+    bottom: -80px;
     filter: contrast(1);
 }
 
