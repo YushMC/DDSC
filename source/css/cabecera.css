@@ -9,9 +9,9 @@ header{
     
 }
 .abajo_scroll{
-    background: var(--color_header);
+    background: var(--enfasis);
     transition: all 0.7s linear;
-    box-shadow: 0px 0px 30px 2px rgb(65, 65, 65);
+    box-shadow: 0px 0px 30px 2px rgb(37, 37, 37);
 }
 .header_content{
     position: relative;
