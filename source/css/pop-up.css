@@ -5,32 +5,36 @@
     --text-sobre: #fff;
     --background_cards:url("../../assets/gui/menu_bg.png");
     --enfasis:#e726ee;
+    --color_header : #393d42;
+    
 }
 
 [data-theme="dark"] {
     --primary: #252525;
-    --background:url("../../assets/gui/Royal.png");
+    --background:url("../../assets/gui/Lawrencium.png");
     --text: #fff;
     --text-sobre: #000;
     --background_cards:url("../../assets/gui/menu_bg_d.png");
     --enfasis:#a610ac;
+    --color_header : #393d42;
 }
 
 [data-colores="verde"] {
     --enfasis:#009d71;
+    --enfasis_transparente: #009d7186;
     
 }
 [data-colores="rosa"] {
     --enfasis:#a610ac;
-    
+    --enfasis_transparente: #a710ac86;
 }
 [data-colores="azul"] {
     --enfasis:#046797;
-    
+    --enfasis_transparente: #04679786;
 }
 [data-colores="morado"] {
     --enfasis:#974be2;
-    
+    --enfasis_transparente: #974be286 ;
 }
 
 
