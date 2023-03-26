@@ -266,8 +266,6 @@ body{
     .contenido{
         display: flex;
         flex-direction: column;
-        
-        padding-bottom: 10px;
     }
     .contenido .imagenes{
         margin: 0;
