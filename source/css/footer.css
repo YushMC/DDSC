@@ -8,15 +8,15 @@
     justify-content: center;
     align-items: center;
     z-index: 80;
-    background-color: var(--enfasis);
+    background-color: var(--enfasis_transparente);
     box-shadow: 0px 0px 10px 2px black;
     color: white;
     
 }
 .contenedor_footer{
-    margin: 10px;
+
     width: 100%;
-    height: 50%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,24 +24,94 @@
 }
 .contenedor_arriba_footer{
     width: 100%;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
-.contenedor_arriba_footer .derecho{
+.derecho{
     padding: 10px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
     
-    font-size: 13px;
-    color: black;
+    
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    font-size: 30px;
+    gap: 10px;
 }
-.contenedor_arriba_footer .izquierdo{
+.derecho a{
+    text-decoration: none;
+    color: white;
+}
+.izquierdo{
+    width: 80%;
     padding: 10px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    
+    margin: auto;
+    gap: 5px;
     font-size: 13px;
+}
+.izquierdo img{
+    width: 20%;
+}
+.contenedor_abajo_footer{
+    width: 100%;
+    background: var(--enfasis);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.centro{
+    width: 100%;
+    padding: 5px;
+
+}
+.centro p{
+    font-size: 12px;
+}
+@media screen and (max-width: 1200px){
+    .izquierdo{
+        flex-direction: column;
+    }
+    .izquierdo img{
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .derecho{
+        width: 30%;
+        font-size: 10px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .centro{
+        width: 40%;
+        font-size: 1px !important; 
+        margin: 0;
+    }
+    .centro p{
+        font-size: 8px;
+    }
+    .izquierdo{
+        width: 30%;
+        font-size: 5px;
+        
+        margin: 0;
+        align-items: center;
+    }
+    .izquierdo img{
+        
+        width: 50%;
+    }
+    .contenedor_arriba_footer{
+        display: flex;
+    }
 }
