@@ -71,12 +71,13 @@ header{
     background-color: #00000000;
 }
 .navegacion nav ul li a:hover{
-    color: rgb(156, 156, 156);
+    color: rgb(219, 219, 219);
     transition: all 1s linear;
 }
 .navegacion nav ul li hr{
     height: 3px;
     background-color: rgba(0, 0, 0, 0);
+    width: 100%;
 }
 .navegacion nav ul li:hover  hr{
     background-color: white;
@@ -89,18 +90,22 @@ header{
     flex-direction: column;
     
     *animation: focus-boton 4s infinite;
-    
 }
 
 #selected:hover a{
     color: rgb(255, 255, 255);
     
     transition: all .4s linear;
+    
 }
 #selected  hr{
     visibility: visible;
-    background-color: white;
+    background-color: black;
     width: 100%;
+    
+}
+#selected:hover hr{
+    background-color: white;
 }
 @keyframes focus-boton{
     0%{

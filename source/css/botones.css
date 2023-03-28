@@ -23,7 +23,7 @@
     border-style: none;
 }
 .salir{
-  padding: 8px;
+  padding: 4px;
   background: #990101;
   color: white;
   border-radius: 10px;
@@ -31,6 +31,7 @@
   transition: all 0.5s linear;
   border-style: none;
   cursor: pointer;
+  margin: 5px;
 }
 .salir:hover{
   background: #d81717;

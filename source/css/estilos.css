@@ -48,7 +48,8 @@ body{
 .body_content{
     width: 100%;
     position: relative;
-    top:75%;
+    top:70%;
+    
     background-image: var(--background);
     background-repeat:repeat-y;
     background-size: cover;
@@ -237,6 +238,11 @@ body{
         background-image: none;
         background-size: contain;
         
+    }
+}
+@media screen and (min-width: 1920px){
+    .body_content{
+        top: 50%;
     }
 }
 @media screen and (max-width: 900px){

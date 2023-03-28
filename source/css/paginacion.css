@@ -59,7 +59,7 @@
 
   .page-link:hover {
     z-index: 2;
-    color: var(--bs-pagination-hover-color);
+    color: var(--text-sobre);
     background-color: var(--enfasis);
     border-color: var(--enfasis);
     scale: 1.2;
