@@ -1,4 +1,4 @@
-const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+const preferedColorScheme =  'light';
 const btnSwitch = document.querySelector('#swicth-mode');
 
 const setTheme = (theme) => {
@@ -65,9 +65,7 @@ function indicadores(){
     }else if(localStorage.getItem('colores')=="azul"){
         btnSayori.style.background = "rgba( 33, 202, 247 ,0.5)"
         btnSayori.style.borderRadius = "15px"
-        btnYuri.style.background = "none";
-        btnNatsuki.style.background = "none";
-        btnMonika.style.background = "none";
+         
         
 
     }else if(localStorage.getItem('colores')=="morado"){
@@ -78,5 +76,53 @@ function indicadores(){
         
         btnNatsuki.style.background = "none";
     }
+    document.getElementById('creadorName').innerHTML = localStorage.getItem('codigo');
+}
+
+
+const setCodigo = (name) => {
+    localStorage.setItem('codigo', name);
+    indicadores();
+}
+setCodigo(localStorage.getItem('codigo'));
+
+
+function canje(){
+    var datos = document.getElementById('codigos').value; 
+   if (datos=='AngelG4el'){
+    setColor(datos);
+    colorSeleccionado("AngelG4el");
+    setCodigo('AngelG4el');
+    document.getElementById('creadorName').innerHTML = localStorage.getItem('codigo');
+    document.getElementById("codigos").value = "";
     
+   }else if(datos=='Just Yuri' || datos=='JUST YURI'){
+    setColor("Slender");
+    colorSeleccionado("Slender Dios");
+    btnYuri.style.background = "none";
+    btnNatsuki.style.background = "none";
+    btnMonika.style.background = "none";
+    btnSayori.style.background = "none";
+    
+    setCodigo('Slender Dios');
+    document.getElementById("codigos").value = "";
+    document.getElementById('creadorName').innerHTML = localStorage.getItem('codigo');
+    
+   }else{
+    ErrorAlerta("Sin datos");
+   }
+   
+
+}
+
+
+function descanjear(){
+    let h1 = document.querySelector('h1');
+    setColor('rosa');
+    h1.classList.remove('glitch');
+    setCodigo('Sin Datos');
+    document.getElementById("codigos").value = "";
+    document.getElementById('creadorName').innerHTML = localStorage.getItem('codigo');
+    delete datos;
+    document.reload(true);
 }
