@@ -16,6 +16,7 @@
     <script src="https://kit.fontawesome.com/69bbe484d6.js" crossorigin="anonymous"></script>
     <title>Mods Originales - DDSC</title>
 </head>
+
 <body >
     <header >
         <div class="header_content">
@@ -29,9 +30,9 @@
                     <nav>
                         <ul>
                             <li ><a href="../index"><i class="fa-solid fa-house"></i> Inicio</a><hr></li>
-                            <li  id="selected"><a href="../traducciones/pagina-1"><i class="fa-solid fa-language"></i> Traducciones</a><hr></li>
-                            <li><a href="pagina-1"><i class="fa-solid fa-people-group"></i> Mods</a><hr></li>
-                            <li><a href="pagina-1"><i class="fa-solid fa-brush"></i> Tema</a><hr></li>
+                            <li  ><a href="../traducciones/pagina-1"><i class="fa-solid fa-language"></i> Traducciones</a><hr></li>
+                            <li id="selected"><a href="pagina-1"><i class="fa-solid fa-people-group"></i> Mods</a><hr></li>
+                            <li><a href="#modal"><i class="fa-solid fa-brush"></i> Tema</a><hr></li>
                             <!-- <li><a href="https://www.dokidokispanish.club/"><i class="fa-solid fa-house-user"></i> Ir al sitio web antiguo</a></li> -->
                         </ul>
                     </nav>
@@ -78,6 +79,16 @@
                     </label>
                 </p>
                 </div>
+                
+                <div class="codigo">
+                    <p>
+                        Código: <h5 id="creadorName">Sin Codigo</h5>
+                        
+                    </p>
+                    <input type="text" name="" id="codigos">
+                    <button type="submit" class="saber_mas" style="border: none;" onclick="canje()">Canjear</button>
+                    <button type="submit" class="salir" style="border: none;" onclick="descanjear()">Revirtir cambios</button>
+                </div>
             </div>
             <a href="pagina-1" class="btn-close-popup">X</a>
         </div>
@@ -120,7 +131,7 @@
                 <div class="card"   >
                     <div class="cover">
                         <img src="../assets/logos-mods-originales/Mexican_club.png" alt="">
-                        <div class="img__back" style="background-image: url('../assets/capturas/Exit_Music/cap_1.png'); "></div>
+                        <div class="img__back" style="background-image: url('../assets/capturas-mods-originales/mexican_club/ddmc.gif'); "></div>
                     </div>
                     <div class="description">
                         <h2>Mexican Club</h2>
@@ -135,7 +146,7 @@
                                 <hr>
                             </div>
                             <div class="estado-card">
-                                <label>Estado: <br><b>Terminado</b></label>
+                                <label>Estado: <br><b>Demo (en desarrollo)</b></label>
                                 <hr>
                             </div>
                             <!--
@@ -145,28 +156,28 @@
                             </div>
                             -->
                         </div>
-                        <a href="../mod/exit-music" class="saber_mas"> Más Información</a>
+                        <a href="../mod/mexican-club" class="saber_mas"> Más Información</a>
                     </div>
                 </div>
                 <div class="card"   >
                     <div class="cover">
                         <img src="../assets/logos-mods-originales/New-life.png" alt="">
-                        <div class="img__back" style="background-image: url('../assets/capturas/Salvation/cap_1.png');"></div>
+                        <div class="img__back" style="background-image: url('../assets/gui/Dania.png');"></div>
                     </div>
                     <div class="description">
                         <h2>New Life</h2>
                         
                         <div class="info-mods">
                             <div class="duracion-card">
-                                <label>Duracion:<br> <b>Largo</b></label>
+                                <label>Duracion:<br> <b>Corto</b></label>
                                 <hr>
                             </div>
                             <div class="genero-card">
-                                <label>Genero: <br><b>Romance/Terror</b></label>
+                                <label>Genero: <br><b>Sin Datos</b></label>
                                 <hr>
                             </div>
                             <div class="estado-card">
-                                <label>Estado: <br><b>Demo</b></label>
+                                <label>Estado: <br><b>Sin Datos</b></label>
                                 <hr>
                             </div>
                             <!--
@@ -176,14 +187,14 @@
                             </div>
                             -->
                         </div>
-                        <a href="../mod/template" class="saber_mas"> Más Información</a>
+                        <a href="../mod/new-life" class="saber_mas"> Más Información</a>
                     </div>
                 </div>
 
                 <div class="card"   >
                     <div class="cover">
                         <img src="../assets/logos-mods-originales/Emerald_heart.png" alt="">
-                        <div class="img__back" style="background-image: url('../assets/capturas/Monika_Before_Story/cap_1.png');"></div>
+                        <div class="img__back" style="background-image: url('../assets/capturas-mods-originales/emerald_heart/cap_2.jpg');"></div>
                     </div>
                     <div class="description">
                         <h2>Emerald Heart</h2>
@@ -198,7 +209,7 @@
                                 <hr>
                             </div>
                             <div class="estado-card">
-                                <label>Estado: <br><b>Demo</b></label>
+                                <label>Estado: <br><b>Demo (en desarrollo)</b></label>
                                 <hr>
                             </div>
                             <!--
@@ -208,14 +219,14 @@
                             </div>
                             -->
                         </div>
-                        <a href="../mod/template" class="saber_mas"> Más Información</a>
+                        <a href="../mod/emerald-heart" class="saber_mas"> Más Información</a>
                     </div>
                 </div>
 
                 <div class="card"   >
                     <div class="cover">
                         <img src="../assets/logos-mods-originales/Sayori-Story.png" alt="">
-                        <div class="img__back" style="background-image: url('../assets/capturas/MCs_Revenge/cap_1.jpg');"></div>
+                        <div class="img__back" style="background-image: url('../assets/capturas-mods-originales/sayori_story/cap_1.jpg');"></div>
                     </div>
                     <div class="description">
                         <h2>Sayori Story</h2>
@@ -229,7 +240,7 @@
                                 <hr>
                             </div>
                             <div class="estado-card">
-                                <label>Estado: <br><b>Demo</b></label>
+                                <label>Estado: <br><b>Demo (descontinudo)</b></label>
                                 <hr>
                             </div>
                             <!--
@@ -239,24 +250,24 @@
                             </div>
                             -->
                         </div>
-                        <a href="../mod/template" class="saber_mas"> Más Información</a>
+                        <a href="../mod/sayori-story" class="saber_mas"> Más Información</a>
                     </div>
                 </div>
                 <div class="card"   >
                         <div class="cover">
                             <img src="../assets/logos-mods-originales/Chritsmas-time.png" alt="">
-                            <div class="img__back" style="background-image: url('../assets/capturas/Relapse/cap_1.jpg');"></div>
+                            <div class="img__back" style="background-image: url('../assets/capturas-mods-originales/christmas_time/cap_1.png');"></div>
                         </div>
                         <div class="description">
                             <h2>Christmas Time</h2>
                            
                             <div class="info-mods">
                                 <div class="duracion-card">
-                                    <label>Duracion:<br> <b>Muy Largo</b></label>
+                                    <label>Duracion:<br> <b>Corto</b></label>
                                     <hr>
                                 </div>
                                 <div class="genero-card">
-                                    <label>Genero: <br><b>Romance/Drama</b></label>
+                                    <label>Genero: <br><b>Comedia</b></label>
                                     <hr>
                                 </div>
                                 <div class="estado-card">
@@ -270,24 +281,24 @@
                                 </div>
                                 -->
                             </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
+                            <a href="../mod/christmas-time" class="saber_mas"> Más Información</a>
                         </div>
                 </div>
                 <div class="card"   >
                         <div class="cover">
                             <img src="../assets/logos-mods-originales/logo_ap.png" alt="">
-                            <div class="img__back" style="background-image: url('../assets/capturas/Sweet_Dreams/cap_1.jpg');"></div>
+                            <div class="img__back" style="background-image: url('../assets/capturas-mods-originales/awakening_problem/cap_1.png');"></div>
                         </div>
                         <div class="description">
                             <h2>Awakening Problem</h2>
                             <label class="seleccion-editor">SELECCIÓN DE LA COMUNIDAD</label>
                             <div class="info-mods">
                                 <div class="duracion-card">
-                                    <label>Duracion:<br> <b>Muy Corto</b></label>
+                                    <label>Duracion:<br> <b>Largo</b></label>
                                     <hr>
                                 </div>
                                 <div class="genero-card">
-                                    <label>Genero: <br><b>Romance/Comedia</b></label>
+                                    <label>Genero: <br><b>Comedia/Drama</b></label>
                                     <hr>
                                 </div>
                                 <div class="estado-card">
@@ -301,7 +312,7 @@
                                 </div>
                                 -->
                             </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
+                            <a href="../mod/awakening-problem" class="saber_mas"> Más Información</a>
                         </div>
                 </div>
                 <div class="card"   >
@@ -331,13 +342,13 @@
                                 </div>
                                 -->
                             </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
+                            <a href="../mod/after-life" class="saber_mas"> Más Información</a>
                         </div>
                 </div>
                 <div class="card"   >
                         <div class="cover">
-                            <img src="../assets/logos/default.png" alt="">
-                            <div class="img__back" style="background-image: url('../assets/capturas/Nightmare/cap_1.jpg');"></div>
+                            <img src="../assets/logos-mods-originales/Happy-ilussion.png" alt="">
+                            <div class="img__back" style="background-image: url('../assets/gui/Dania.png');"></div>
                         </div>
                         <div class="description">
                             <h2>Happy Ilussion</h2>
@@ -347,13 +358,16 @@
                                     <hr>
                                 </div>
                                 <div class="genero-card">
-                                    <label>Genero: <br><b>Horror</b></label>
+                                    <label>Genero: <br><b>Otros</b></label>
                                     <hr>
                                 </div>
                                 <div class="estado-card">
                                     <label>Estado: <br><b>Demo</b></label>
                                     <hr>
                                 </div>
+                                <h4 class="nsfw">
+                                    Contiene contenido +18, NSFW o no apto para menores.
+                                </h4>
                                 <!--
                                 <div class="fecha-card">
                                     <label>Subido: </label>
@@ -361,24 +375,24 @@
                                 </div>
                                 -->
                             </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
+                            <a href="../mod/happy-ilussion" class="saber_mas"> Más Información</a>
                         </div>
                 </div>
                 <div class="card"   >
                         <div class="cover">
-                            <img src="../assets/logos/default.png" alt="">
-                            <div class="img__back" style="background-image: url('../assets/capturas/Not_Oki_Doki_a_lost_chapter/cap_1.png');"></div>
+                            <img src="../assets/logos-mods-originales/Doki-tawa.png" alt="">
+                            <div class="img__back" style="background-image: url('../assets/capturas-mods-originales/doki_tawa/cap_1.jpg');"></div>
                         </div>
                         <div class="description">
                             <h2>Doki Tawa</h2>
-                            <label class="seleccion-editor">SELECCIÓN DE LA COMUNIDAD</label>
+                            
                             <div class="info-mods">
                                 <div class="duracion-card">
-                                    <label>Duracion:<br> <b>Media</b></label>
+                                    <label>Duracion:<br> <b>Corto</b></label>
                                     <hr>
                                 </div>
                                 <div class="genero-card">
-                                    <label>Genero: <br><b>Comedia/Horror</b></label>
+                                    <label>Genero: <br><b>Comedia/Crossover</b></label>
                                     <hr>
                                 </div>
                                 <div class="estado-card">
@@ -392,23 +406,23 @@
                                 </div>
                                 -->
                             </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
+                            <a href="../mod/doki-tawa" class="saber_mas"> Más Información</a>
                         </div>
                 </div>
                 <div class="card"   >
                         <div class="cover">
-                            <img src="../assets/logos/logo_we_are_the_literature_club.png" alt="">
-                            <div class="img__back" style="background-image: url('../assets/capturas/We_Are_The_Literature_Club_2/cap_1.jpg');"></div>
+                            <img src="../assets/logos-mods-originales/Forgotten-clouds.jpg" alt="">
+                            <div class="img__back" style="background-image: url('../assets/gui/Dania.png');"></div>
                         </div>
                         <div class="description">
                             <h2>Forgotten Clouds</h2>
                             <div class="info-mods">
                                 <div class="duracion-card">
-                                    <label>Duracion:<br> <b>Media</b></label>
+                                    <label>Duracion:<br> <b>Corto</b></label>
                                     <hr>
                                 </div>
                                 <div class="genero-card">
-                                    <label>Genero: <br><b>Comedia</b></label>
+                                    <label>Genero: <br><b>Sin Datos</b></label>
                                     <hr>
                                 </div>
                                 <div class="estado-card">
@@ -422,27 +436,27 @@
                                 </div>
                                 -->
                             </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
+                            <a href="../mod/forgotten-clouds" class="saber_mas"> Más Información</a>
                         </div>
                 </div>
                 <div class="card"   >
                         <div class="cover">
-                            <img src="../assets/logos/default.png" alt="">
-                            <div class="img__back" style="background-image: url('../assets/capturas/Yandere_Club/cap_1.jpg');"></div>
+                            <img src="../assets/logos-mods-originales/lost-memories.jpg" alt="">
+                            <div class="img__back" style="background-image: url('../assets/gui/Dania.png');"></div>
                         </div>
                         <div class="description">
                             <h2>Lost Memories</h2>
                             <div class="info-mods">
                                 <div class="duracion-card">
-                                    <label>Duracion:<br> <b>Corto</b></label>
+                                    <label>Duracion:<br> <b>Muy Corto</b></label>
                                     <hr>
                                 </div>
                                 <div class="genero-card">
-                                    <label>Genero: <br><b>Suspenso</b></label>
+                                    <label>Genero: <br><b>Sin Datos</b></label>
                                     <hr>
                                 </div>
                                 <div class="estado-card">
-                                    <label>Estado: <br><b>Demo</b></label>
+                                    <label>Estado: <br><b>Demo (en desarrollo)</b></label>
                                     <hr>
                                 </div>
                                 <!--
@@ -452,19 +466,19 @@
                                 </div>
                                 -->
                             </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
+                            <a href="../mod/lost-memories" class="saber_mas"> Más Información</a>
                         </div>
                 </div>
                 <div class="card"   >
                         <div class="cover">
-                            <img src="../assets/logos/default.png" alt="">
-                            <div class="img__back" style="background-image: url('../assets/capturas/Dissaparence/cap_1.jpg');"></div>
+                            <img src="../assets/logos-mods-originales/out-of-reality.png" alt="">
+                            <div class="img__back" style="background-image: url('../assets/capturas-mods-originales/out_of_reality/cap_1.png');"></div>
                         </div>
                         <div class="description">
                             <h2>Out Of Reality</h2>
                             <div class="info-mods">
                                 <div class="duracion-card">
-                                    <label>Duracion:<br> <b>Corto</b></label>
+                                    <label>Duracion:<br> <b>Muy Corto</b></label>
                                     <hr>
                                 </div>
                                 <div class="genero-card">
@@ -472,7 +486,7 @@
                                     <hr>
                                 </div>
                                 <div class="estado-card">
-                                    <label>Estado: <br><b>Demo</b></label>
+                                    <label>Estado: <br><b>Demo (en desarrollo)</b></label>
                                     <hr>
                                 </div>
                                 <!--
@@ -482,19 +496,19 @@
                                 </div>
                                 -->
                             </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
+                            <a href="../mod/out-of-reality" class="saber_mas"> Más Información</a>
                         </div>
+                </div>
                 <div class="card"   >
                         <div class="cover">
-                            <img src="../assets/logos/Logo_MAS.png" alt="">
-                            <div class="img__back" style="background-image: url('../assets/capturas//Monika_After_Story/cap_1.jpg');"></div>
+                            <img src="../assets/logos-mods-originales/Meni-cuquis.png" alt="">
+                            <div class="img__back" style="background-image: url('../assets/capturas-mods-originales/meni_cuquis/cap_1.png');"></div>
                         </div>
                         <div class="description">
                             <h2>Meni Cuquis</h2>
-                            <label class="seleccion-editor">SELECCIÓN DE LA COMUNIDAD</label>
                             <div class="info-mods">
                                 <div class="duracion-card">
-                                    <label>Duracion:<br> <b>Infinito*</b></label>
+                                    <label>Duracion:<br> <b>Corto</b></label>
                                     <hr>
                                 </div>
                                 <div class="genero-card">
@@ -512,24 +526,23 @@
                                 </div>
                                 -->
                             </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
+                            <a href="../mod/meni-cuquis" class="saber_mas"> Más Información</a>
                         </div>
                 </div>
                 <div class="card"   >
                         <div class="cover">
-                            <img src="../assets/logos/logo_outcast.png" alt="">
-                            <div class="img__back" style="background-image: url('../assets/capturas/Outcast/cap_1.jpg')"></div>
+                            <img src="../assets/logos-mods-originales/Peruvian-club.png" alt="">
+                            <div class="img__back" style="background-image: url('../assets/capturas-mods-originales/peruvian_club/cap_1.jpeg')"></div>
                         </div>
                         <div class="description">
                             <h2>Peruvian Club</h2>
-                            <label class="seleccion-editor">SELECCIÓN DE LA COMUNIDAD</label>
                             <div class="info-mods">
                                 <div class="duracion-card">
-                                    <label>Duracion:<br> <b>Largo</b></label>
+                                    <label>Duracion:<br> <b>Media</b></label>
                                     <hr>
                                 </div>
                                 <div class="genero-card">
-                                    <label>Genero: <br><b>Romance</b></label>
+                                    <label>Genero: <br><b>Comedia</b></label>
                                     <hr>
                                 </div>
                                 <div class="estado-card">
@@ -543,13 +556,13 @@
                                 </div>
                                 -->
                             </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
+                            <a href="../mod/peruvian-club" class="saber_mas"> Más Información</a>
                         </div>
                 </div>
                 <div class="card"   >
                         <div class="cover">
-                            <img src="../assets/logos/default.png" alt="">
-                            <div class="img__back" style="background-image: url('../assets/capturas/Rhapsody/cap_1.jpg');"></div>
+                            <img src="../assets/logos-mods-originales/Esquizofrenia.png" alt="">
+                            <div class="img__back" style="background-image: url('../assets/capturas-mods-originales/esquizofrenia/banner.jpg');"></div>
                         </div>
                         <div class="description">
                             <h2>Esquizofrenia</h2>
@@ -573,23 +586,23 @@
                                 </div>
                                 -->
                             </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
+                            <a href="../mod/esquizofrenia" class="saber_mas"> Más Información</a>
                         </div>
                 </div>
                 <div class="card"   >
                         <div class="cover">
-                            <img src="../assets/logos/logo_sayori_date.png" alt="">
+                            <img src="../assets/logos-mods-originales/Meteor-black-collection.jpg" alt="">
                             <div class="img__back" style="background-image: url('../assets/capturas/Sayori_Date/cap_1.jpg');"></div>
                         </div>
                         <div class="description">
                             <h2>Meteor Black Collection</h2>
                             <div class="info-mods">
                                 <div class="duracion-card">
-                                    <label>Duracion:<br> <b>Muy Corto</b></label>
+                                    <label>Duracion:<br> <b>Largo</b></label>
                                     <hr>
                                 </div>
                                 <div class="genero-card">
-                                    <label>Genero: <br><b>Horror</b></label>
+                                    <label>Genero: <br><b>Otros</b></label>
                                     <hr>
                                 </div>
                                 <div class="estado-card">
@@ -603,110 +616,20 @@
                                 </div>
                                 -->
                             </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
+                            <a href="../mod/meteor-black-collection" class="saber_mas"> Más Información</a>
                         </div>
                 </div>
                 <div class="card"   >
                         <div class="cover">
-                            <img src="../assets/logos/default.png" alt="">
-                            <div class="img__back" style="background-image: url('../assets/capturas/Rainclouds/cap_1.jpg');"></div>
+                            <img src="../assets/logos-mods-originales/love-decisions.png" alt="">
+                            <div class="img__back" style="background-image: url('../assets/capturas-mods-originales/love_decisions/cap_1.png');"></div>
                         </div>
                         <div class="description">
                             <h2>Love Decisions</h2>
                             <label class="seleccion-editor">SELECCIÓN DE LA COMUNIDAD</label>
                             <div class="info-mods">
                                 <div class="duracion-card">
-                                    <label>Duracion:<br> <b>Largo</b></label>
-                                    <hr>
-                                </div>
-                                <div class="genero-card">
-                                    <label>Genero: <br><b>Drama/Suspenso</b></label>
-                                    <hr>
-                                </div>
-                                <div class="estado-card">
-                                    <label>Estado: <br><b>Demo</b></label>
-                                    <hr>
-                                </div>
-                                <!--
-                                <div class="fecha-card">
-                                    <label>Subido: </label>
-                                    <hr>
-                                </div>
-                                -->
-                            </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
-                        </div>
-                </div>
-                <div class="card"   >
-                        <div class="cover">
-                            <img src="../assets/logos/logo_just_natsuki.png" alt="">
-                            <div class="img__back" style="background-image: url('../assets/capturas/Just_Natsuki/cap_1.jpg');"></div>
-                        </div>
-                        <div class="description">
-                            <h2>Switching Club</h2>
-                            <div class="info-mods">
-                                <div class="duracion-card">
-                                    <label>Duracion:<br> <b>Sin datos</b></label>
-                                    <hr>
-                                </div>
-                                <div class="genero-card">
-                                    <label>Genero: <br><b>Otros</b></label>
-                                    <hr>
-                                </div>
-                                <div class="estado-card">
-                                    <label>Estado: <br><b>Demo</b></label>
-                                    <hr>
-                                </div>
-                                <!--
-                                <div class="fecha-card">
-                                    <label>Subido: </label>
-                                    <hr>
-                                </div>
-                                -->
-                            </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
-                        </div>
-                </div>
-                <div class="card"   >
-                        <div class="cover">
-                            <img src="../assets/logos/logo_we_are_the_literature_club_1.png" alt="">
-                            <div class="img__back" style="background-image: url('../assets/capturas/We_Are_The_Literature_Club/cap_1.jpg');"></div>
-                        </div>
-                        <div class="description">
-                            <h2>DDLC 1.5</h2>
-                            <div class="info-mods">
-                                <div class="duracion-card">
-                                    <label>Duracion:<br> <b>Corto</b></label>
-                                    <hr>
-                                </div>
-                                <div class="genero-card">
-                                    <label>Genero: <br><b>Drama</b></label>
-                                    <hr>
-                                </div>
-                                <div class="estado-card">
-                                    <label>Estado: <br><b>Demo</b></label>
-                                    <hr>
-                                </div>
-                                <!--
-                                <div class="fecha-card">
-                                    <label>Subido: </label>
-                                    <hr>
-                                </div>
-                                -->
-                            </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
-                        </div>
-                </div>
-                <div class="card"   >
-                        <div class="cover">
-                            <img src="../assets/logos/logo_spark_of_hope.png" alt="">
-                            <div class="img__back" style="background-image: url('../assets/capturas/Spark_Of_Hope/cap_1.jpg');"></div>
-                        </div>
-                        <div class="description">
-                            <h2>Monika Faded</h2>
-                            <div class="info-mods">
-                                <div class="duracion-card">
-                                    <label>Duracion:<br> <b>Largo</b></label>
+                                    <label>Duracion:<br> <b>Media</b></label>
                                     <hr>
                                 </div>
                                 <div class="genero-card">
@@ -714,7 +637,7 @@
                                     <hr>
                                 </div>
                                 <div class="estado-card">
-                                    <label>Estado: <br><b>Demo</b></label>
+                                    <label>Estado: <br><b>Demo (en desarrollo)</b></label>
                                     <hr>
                                 </div>
                                 <!--
@@ -724,23 +647,84 @@
                                 </div>
                                 -->
                             </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
+                            <a href="../mod/love-decisions" class="saber_mas"> Más Información</a>
                         </div>
                 </div>
                 <div class="card"   >
                         <div class="cover">
-                            <img src="../assets/logos/logo_new_eyes.png" alt="">
-                            <div class="img__back" style="background-image: url('../assets/capturas/New_Eyes/cap_1.jpg');"></div>
+                            <img src="../assets/logos-mods-originales/Switching-club.png" alt="">
+                            <div class="img__back" style="background-image: url('../assets/capturas-mods-originales/switching_club/cap_1.png');"></div>
                         </div>
                         <div class="description">
-                            <h2>Feelings And Literature</h2>
+                            <h2>Switching Club</h2>
+                            <label class="seleccion-editor">SELECCIÓN DE LA COMUNIDAD</label>
                             <div class="info-mods">
                                 <div class="duracion-card">
-                                    <label>Duracion:<br> <b>Largo</b></label>
+                                    <label>Duracion:<br> <b>Media</b></label>
                                     <hr>
                                 </div>
                                 <div class="genero-card">
-                                    <label>Genero: <br><b>Drama</b></label>
+                                    <label>Genero: <br><b>Comedia</b></label>
+                                    <hr>
+                                </div>
+                                <div class="estado-card">
+                                    <label>Estado: <br><b>Demo (en desarrollo)</b></label>
+                                    <hr>
+                                </div>
+                                <!--
+                                <div class="fecha-card">
+                                    <label>Subido: </label>
+                                    <hr>
+                                </div>
+                                -->
+                            </div>
+                            <a href="../mod/switching-club" class="saber_mas"> Más Información</a>
+                        </div>
+                </div>
+                <div class="card"   >
+                        <div class="cover">
+                            <img src="../assets/logos-mods-originales/ddlc_1-5.png" alt="">
+                            <div class="img__back" style="background-image: url('../assets/capturas-mods-originales/ddlc_1-5/cap_1.png');"></div>
+                        </div>
+                        <div class="description">
+                            <h2>DDLC 1.5</h2>
+                            <div class="info-mods">
+                                <div class="duracion-card">
+                                    <label>Duracion:<br> <b>Sin Datos</b></label>
+                                    <hr>
+                                </div>
+                                <div class="genero-card">
+                                    <label>Genero: <br><b>Romance</b></label>
+                                    <hr>
+                                </div>
+                                <div class="estado-card">
+                                    <label>Estado: <br><b>Demo (en desarrollo)</b></label>
+                                    <hr>
+                                </div>
+                                <!--
+                                <div class="fecha-card">
+                                    <label>Subido: </label>
+                                    <hr>
+                                </div>
+                                -->
+                            </div>
+                            <a href="../mod/ddlc-1-5" class="saber_mas"> Más Información</a>
+                        </div>
+                </div>
+                <div class="card"   >
+                        <div class="cover">
+                            <img src="../assets/logos-mods-originales/Monika-faded.png" alt="">
+                            <div class="img__back" style="background-image: url('../assets/capturas-mods-originales/monika_faded/cap_1.png');"></div>
+                        </div>
+                        <div class="description">
+                            <h2>Monika Faded</h2>
+                            <div class="info-mods">
+                                <div class="duracion-card">
+                                    <label>Duracion:<br> <b>Corto</b></label>
+                                    <hr>
+                                </div>
+                                <div class="genero-card">
+                                    <label>Genero: <br><b>Sin Datos</b></label>
                                     <hr>
                                 </div>
                                 <div class="estado-card">
@@ -754,13 +738,43 @@
                                 </div>
                                 -->
                             </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
+                            <a href="../mod/monika-faded" class="saber_mas"> Más Información</a>
                         </div>
                 </div>
                 <div class="card"   >
                         <div class="cover">
-                            <img src="../assets/logos/logo_olm.png" alt="">
-                            <div class="img__back" style="background-image: url('../assets/capturas/One_Last_Memory/cap_1.jpg');"></div>
+                            <img src="../assets/logos-mods-originales/Feeligns-and-literature.png" alt="">
+                            <div class="img__back" style="background-image: url('../assets/capturas-mods-originales/feelings_and_literature/cap_1.jpg');"></div>
+                        </div>
+                        <div class="description">
+                            <h2>Feelings And Literature</h2>
+                            <div class="info-mods">
+                                <div class="duracion-card">
+                                    <label>Duracion:<br> <b>Corto</b></label>
+                                    <hr>
+                                </div>
+                                <div class="genero-card">
+                                    <label>Genero: <br><b>Romance/Drama</b></label>
+                                    <hr>
+                                </div>
+                                <div class="estado-card">
+                                    <label>Estado: <br><b>Demo (en desarrollo)</b></label>
+                                    <hr>
+                                </div>
+                                <!--
+                                <div class="fecha-card">
+                                    <label>Subido: </label>
+                                    <hr>
+                                </div>
+                                -->
+                            </div>
+                            <a href="../mod/feelings-and-literature" class="saber_mas"> Más Información</a>
+                        </div>
+                </div>
+                <div class="card"   >
+                        <div class="cover">
+                            <img src="../assets/logos-mods-originales/lost-in-dreariness.png" alt="">
+                            <div class="img__back" style="background-image: url('../assets/capturas-mods-originales/lost_in_dreariness/cap_1.png');"></div>
                         </div>
                         <div class="description">
                             <h2>Lost in Dreariness</h2>
@@ -784,13 +798,13 @@
                                 </div>
                                 -->
                             </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
+                            <a href="../mod/lost-in-dreariness" class="saber_mas"> Más Información</a>
                         </div>
                 </div>
                 <div class="card"   >
                         <div class="cover">
-                            <img src="../assets/logos/logo_somnium.png" alt="">
-                            <div class="img__back" style="background-image: url('../assets/capturas/Somnium/cap_1.jpg');"></div>
+                            <img src="../assets/logos-mods-originales/Yuri-life.png" alt="">
+                            <div class="img__back" style="background-image: url('../assets/capturas-mods-originales/yuri_life/cap_1.png');"></div>
                         </div>
                         <div class="description">
                             <h2>Yuri Life</h2>
@@ -800,7 +814,7 @@
                                     <hr>
                                 </div>
                                 <div class="genero-card">
-                                    <label>Genero: <br><b>Suspenso</b></label>
+                                    <label>Genero: <br><b>Comedia/Romance</b></label>
                                     <hr>
                                 </div>
                                 <div class="estado-card">
@@ -814,27 +828,27 @@
                                 </div>
                                 -->
                             </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
+                            <a href="../mod/yuri-life" class="saber_mas"> Más Información</a>
                         </div>
                 </div>
                 <div class="card"   >
                         <div class="cover">
-                            <img src="../assets/logos/logo_your_bully_natsuki.png" alt="">
-                            <div class="img__back" style="background-image: url('../assets/capturas/Your_Bully_Natsuki/cap_1.jpg');"></div>
+                            <img src="../assets/logos-mods-originales/Fighting-club.png" alt="">
+                            <div class="img__back" style="background-image: url('../assets/capturas-mods-originales/fighting_for_reality/cap_1.png');"></div>
                         </div>
                         <div class="description">
                             <h2>Fighting For Reality</h2>
                             <div class="info-mods">
                                 <div class="duracion-card">
-                                    <label>Duracion:<br> <b>Muy Corto</b></label>
+                                    <label>Duracion:<br> <b>Sin Datos</b></label>
                                     <hr>
                                 </div>
                                 <div class="genero-card">
-                                    <label>Genero: <br><b>Drama</b></label>
+                                    <label>Genero: <br><b>RPG/Accion</b></label>
                                     <hr>
                                 </div>
                                 <div class="estado-card">
-                                    <label>Estado: <br><b>Demo</b></label>
+                                    <label>Estado: <br><b>Demo (en desarrollo)</b></label>
                                     <hr>
                                 </div>
                                 <!--
@@ -844,7 +858,7 @@
                                 </div>
                                 -->
                             </div>
-                            <a href="../mod/template" class="saber_mas"> Más Información</a>
+                            <a href="../mod/fighting-for-reality" class="saber_mas"> Más Información</a>
                         </div>
                 </div>
             </div>
@@ -857,69 +871,46 @@
                 </div>
             </div>
                     
-            
+            <div class="footer">
+                <!--- <router-link> </router-link> -->
+               <img src="" alt="">
+               <div class="contenedor_footer">
+                 <div class="contenedor_arriba_footer">
+                     <div class="izquierdo">
+                        <img src="../assets/gui/Logo_DDSC.png" alt="Logo DDSC" >
+                         <h1>Team DDSC Web</h1>
+                     </div>
+                     <div class="centro">
+                        <p>
+                            ¡Todo el contenido es gratis! Y no genera ningún ingreso.. 	No afiliado al Team Salvato! <br><br>
+    
+                            No somos dueños del material artístico e intelectual y solo se utiliza con fines informativos, créditos a sus respectivos autores.              
+                        </p>
+                     </div>
+                     <div class="derecho">
+                        <a href="https://www.facebook.com/groups/ddclatina"><h2><i class="fa-brands fa-square-facebook"></i></h2></a>
+                        <a href="https://twitter.com/DokiSpanishClub"><h2><i class="fa-brands fa-square-twitter"></i></h2></a>
+                        <a href="https://discord.gg/7k8YAbjmj9"><h2><i class="fa-brands fa-discord"></i></h2></a>
+                    </div>
+                 </div>
+                 <div class="contenedor_abajo_footer">
+                     
+                        <h3>@2023 Doki Doki Spanish Club</h3>
+    
+                 </div>
+               </div>
+             </div>
          
         
         </div>
-        <div class="footer">
-            <!--- <router-link> </router-link> -->
-           <img src="" alt="">
-           <div class="contenedor_footer">
-             <div class="contenedor_arriba_footer">
-                 <div class="izquierdo">
-                    <img src="../assets/gui/Logo_DDSC.png" alt="Logo DDSC" >
-                     <h1>Team DDSC Web</h1>
-                 </div>
-                 <div class="centro">
-                    <p>
-                        ¡Todo el contenido es gratis! Y no genera ningún ingreso.. 	No afiliado al Team Salvato! <br><br>
-
-                        No somos dueños del material artístico e intelectual y solo se utiliza con fines informativos, créditos a sus respectivos autores.              
-                    </p>
-                 </div>
-                 <div class="derecho">
-                    
-                     <a href="https://www.facebook.com/"><h2><i class="fa-brands fa-square-facebook"></i></h2></a>
-                     <a href="https://twitter.com/"><h2><i class="fa-brands fa-square-twitter"></i></h2></a>
-                     <a href="https://www.instagram.com/"><h2><i class="fa-brands fa-square-instagram"></i></h2></a>
-                     
-                         
-                     
-                 </div>
-             </div>
-             <div class="contenedor_abajo_footer">
-                 
-                    <h3>@2023 Doki Doki Spanish Club</h3>
-
-             </div>
-           </div>
-         </div>
+        
     </div>
 
 </body>
 
 <script src="../source/JS/sliders.js"></script>
     <script src="../source/JS/sweetalert.min.js"></script>
-    <script>
-        function notificacionPrueba(){
-            swal({
-                title: "Modo de prueba",
-                text: "Esta función se encuentra en modo de prueba",
-                icon: "info",
-                button: "¡De acuerdo!",
-            });
-        }
-        function colorSeleccionado(coloress){
-            swal({
-                title: "Cambio efectuado",
-                text: "Se cambio al modo de color de: "+coloress,
-                icon: "success",
-                button: "¡De acuerdo!",
-            });
-
-
-        }
-    </script>
+    <script src="../source/JS/alertas.js"></script>
     <script src="../source/JS/aos.js"></script>
     <script>
         AOS.init();
