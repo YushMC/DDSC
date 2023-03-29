@@ -93,7 +93,9 @@
         </div>
     </div>
     <div class="parallax" style="background-image: url(../assets/gui/banner_traduccion.jpg);">
-        
+        <div id="indicador_abajo">
+            <img id="icono_scroll" src="../assets/gui/icono_abajo.png" alt="">
+        </div>
         <div class="body_content">
             <hr>
             <div class="contenido" >
@@ -911,26 +913,7 @@
 
 <script src="../source/JS/sliders.js"></script>
     <script src="../source/JS/sweetalert.min.js"></script>
-    <script>
-        function notificacionPrueba(){
-            swal({
-                title: "Modo de prueba",
-                text: "Esta función se encuentra en modo de prueba",
-                icon: "info",
-                button: "¡De acuerdo!",
-            });
-        }
-        function colorSeleccionado(coloress){
-            swal({
-                title: "Cambio efectuado",
-                text: "Se cambio al modo de color de: "+coloress,
-                icon: "success",
-                button: "¡De acuerdo!",
-            });
-
-
-        }
-    </script>
+    <script src="../source/JS/alertas.js"></script>
     <script src="../source/JS/aos.js"></script>
     <script>
         AOS.init();
