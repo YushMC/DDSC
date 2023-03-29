@@ -49,6 +49,7 @@ AL TERMINAR DE AGREGAR UN MOD, POR FAVOR ACCEDA Al ENLACE DE REGISTRO, PARA PODE
     <link rel="stylesheet" href="../source/css/botones.css">
     <link rel="stylesheet" href="../source/css/tarjetas.css">
     <link rel="stylesheet" href="../source/css/pop-up.css">
+    <link rel="stylesheet" href="../source/css/paginacion.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
@@ -117,12 +118,23 @@ AL TERMINAR DE AGREGAR UN MOD, POR FAVOR ACCEDA Al ENLACE DE REGISTRO, PARA PODE
                     </label>
                 </p>
                 </div>
+                <div class="codigo">
+                    <p>
+                        Código: <h5 id="creadorName">Sin Codigo</h5>
+                        
+                    </p>
+                    <input type="text" name="" id="codigos">
+                    <button type="submit" class="saber_mas" style="border: none;" onclick="canje()">Canjear</button>
+                    <button type="submit" class="salir" style="border: none;" onclick="descanjear()">Revirtir cambios</button>
+                </div>
             </div>
             <a href="#" class="btn-close-popup">X</a>
         </div>
     </div>
     <div class="parallax" style="background-image: url(../assets/gui/banner_traduccion.jpg);">
-        
+        <div id="indicador_abajo">
+            <img id="icono_scroll" src="../assets/gui/icono_abajo.png" alt="">
+        </div>
         <div class="body_content">
             <hr>
             <div class="contenido" >
@@ -147,6 +159,16 @@ AL TERMINAR DE AGREGAR UN MOD, POR FAVOR ACCEDA Al ENLACE DE REGISTRO, PARA PODE
                 <div class="contenedor-tarjetas" >
                     <div class="nombre_seccion">
                         <h2>Traducciones</h2>
+                    </div>  
+
+                    <div class="paginacion" >
+                        <ul class="pagination justify-content-center">
+                            <li class='page-item'><a class='page-link' href=''><<</a></li>
+                            <li class='page-item '><a class='page-link' href=''>2</a></li>
+                            <li class='page-item active'><a class='page-link' href=''>3</a></li>
+                            <li class='page-item'><a class='page-link' href=''>4</a></li>
+                            <li class='page-item'><a class='page-link' href=''>>></a></li>
+                        </ul>
                     </div>
                 <div class="container_cards">
 <!------------------------------------------------------------------------------------------------------>
@@ -178,7 +200,7 @@ AL TERMINAR DE AGREGAR UN MOD, POR FAVOR ACCEDA Al ENLACE DE REGISTRO, PARA PODE
                             </div>
                             -->
                         </div>
-                        <a href="../mod/template.html" class="saber_mas"> Más Información</a>
+                        <a href="../mod/template" class="saber_mas"> Más Información</a>
                     </div>
                 </div>
                 
@@ -188,7 +210,16 @@ AL TERMINAR DE AGREGAR UN MOD, POR FAVOR ACCEDA Al ENLACE DE REGISTRO, PARA PODE
 
 <!--NO AGREGAR POR DEBAJO DE ESTA LINEA LAS NUEVAS CARTAS>
 <!-------------------------------------------------------------------------------------------------------->
-                </div>                    
+                </div>      
+                <div class="paginacion" >
+                    <ul class="pagination justify-content-center">
+                        <li class='page-item'><a class='page-link' href=''><<</a></li>
+                        <li class='page-item'><a class='page-link' href=''>2</a></li>
+                        <li class='page-item active'><a class='page-link' href=''>3</a></li>
+                        <li class='page-item'><a class='page-link' href=''>4</a></li>
+                        <li class='page-item'><a class='page-link' href=''>>></a></li>
+                    </ul>
+                </div>              
                 </div>
                     
                     
@@ -209,26 +240,7 @@ AL TERMINAR DE AGREGAR UN MOD, POR FAVOR ACCEDA Al ENLACE DE REGISTRO, PARA PODE
 
 <script src="../source/JS/sliders.js"></script>
     <script src="../source/JS/sweetalert.min.js"></script>
-    <script>
-        function notificacionPrueba(){
-            swal({
-                title: "Modo de prueba",
-                text: "Esta función se encuentra en modo de prueba",
-                icon: "info",
-                button: "¡De acuerdo!",
-            });
-        }
-        function colorSeleccionado(coloress){
-            swal({
-                title: "Cambio efectuado",
-                text: "Se cambio al modo de color de: "+coloress,
-                icon: "success",
-                button: "¡De acuerdo!",
-            });
-
-
-        }
-    </script>
+    <script src="../source/JS/alertas.js"></script>
     <script src="../source/JS/aos.js"></script>
     <script>
         AOS.init();
