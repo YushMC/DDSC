@@ -95,7 +95,9 @@
         </div>
     </div>
     <div class="parallax" style="background-image: url(../assets/gui/banner_mods.jpg);" id="arriba">
-        
+        <div id="indicador_abajo">
+            <img id="icono_scroll" src="../assets/gui/icono_abajo.png" alt="">
+        </div>
         <div class="body_content">
             <hr>
             <div class="datos_mods_responsive" >
@@ -256,26 +258,7 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v16.0" nonce="N4dwyW5j"></script>
 <script src="../source/JS/sliders.js"></script>
     <script src="../source/JS/sweetalert.min.js"></script>
-    <script>
-        function notificacionPrueba(){
-            swal({
-                title: "Modo de prueba",
-                text: "Esta función se encuentra en modo de prueba",
-                icon: "info",
-                button: "¡De acuerdo!",
-            });
-        }
-        function colorSeleccionado(coloress){
-            swal({
-                title: "Cambio efectuado",
-                text: "Se cambio al modo de color de: "+coloress,
-                icon: "success",
-                button: "¡De acuerdo!",
-            });
-
-
-        }
-    </script>
+    <script src="../source/JS/alertas.js"></script>
     <script src="../source/JS/aos.js"></script>
     <script>
         AOS.init();
