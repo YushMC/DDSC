@@ -1,12 +1,13 @@
 .datos_mods_responsive{
     position: relative;
-    max-width: 1000px;;
-    margin-left: 14%;
-    margin-right: 14%;
-    margin-bottom: 2%;
     
+    margin:5%;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.3);
+    border-top-color: var(--enfasis);
+    border-top-style: solid;
+    border-top-width: 10px;
+    background-clip: border-box;
+    background-size: contain;
     box-shadow: 0px 0px 80px 1px rgb(44, 44, 44);
 }
 
